@@ -49,5 +49,12 @@ describe 'Solver' do
 
       expect(Solver.new.fizzbuzz(num)).to eq(expected)
     end
+
+    it 'should return fizzbuzz when number divisible by 3 and 5' do
+      num = 15
+      expected = 'fizzbuzz'
+
+      expect(Solver.new.fizzbuzz(num)).to eq expected
+    end
   end
 end
