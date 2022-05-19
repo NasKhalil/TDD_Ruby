@@ -56,5 +56,12 @@ describe 'Solver' do
 
       expect(Solver.new.fizzbuzz(num)).to eq expected
     end
+
+    it 'should return "7" when number is 7' do
+      num = 7
+      expected = '7'
+
+      expect(Solver.new.fizzbuzz(num)).to eq expected
+    end
   end
 end
