@@ -9,4 +9,8 @@ class Solver
   def reverse(str)
     str.reverse
   end
+
+  def fizzbuzz(number)
+    return 'fizz' if number % 3 == 0 
+  end
 end
