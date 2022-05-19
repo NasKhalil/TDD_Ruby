@@ -25,4 +25,13 @@ describe 'Solver' do
       expect(actual).to be expected
     end
   end
+
+  context('reverse method') do
+    it 'should reverse the string' do
+      input_string = 'hello'
+      expected = 'olleh'
+
+      expect(Solver.new.reverse(input_string)).to eq(expected)
+    end
+  end
 end
