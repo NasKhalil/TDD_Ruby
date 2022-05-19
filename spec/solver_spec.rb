@@ -15,5 +15,14 @@ describe 'Solver' do
     it 'should raise exception on negative input' do
       expect { Solver.new.factorial(-5) }.to raise_error('Negative Number not allowed!')
     end
+
+    it 'should return 6 for N = 3' do
+      n = 3
+      expected = 6
+
+      actual = Solver.new.factorial(n)
+
+      expect(actual).to be expected
+    end
   end
 end
