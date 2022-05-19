@@ -42,5 +42,12 @@ describe 'Solver' do
 
       expect(Solver.new.fizzbuzz(num)).to eq(expected)
     end
+
+    it 'should return buzz when number divisible by 5' do
+      num = 10
+      expected = 'buzz'
+
+      expect(Solver.new.fizzbuzz(num)).to eq(expected)
+    end
   end
 end
