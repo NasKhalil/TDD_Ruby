@@ -34,4 +34,13 @@ describe 'Solver' do
       expect(Solver.new.reverse(input_string)).to eq(expected)
     end
   end
+
+  context('Fizzbuzz method') do
+    it 'should return fizz when divisible by 3' do
+      num = 9
+      expected = 'fizz'
+
+      expect(Solver.new.fizzbuzz(num)).to eq(expected)
+    end
+  end
 end
